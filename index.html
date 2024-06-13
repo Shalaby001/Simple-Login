@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="Css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="Css/bootstrap.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="Css/main.css" />
+</head>
+
+<body>
+  <div class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="bg-white rounded">
+      <div class="position-relative d-flex rounded">
+        <!-- Sign Up Section -->
+        <div class="left rounded-start w-50 p-5">
+          <h3 class="mb-3">Sign up</h3>
+          <form id="signUpForm">
+            <div class="mb-3">
+              <label for="signUpName" class="form-label">Your name</label>
+              <input type="text" class="form-control" id="signUpName" />
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" />
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" />
+            </div>
+            <div class="alerts">
+              <div class="alert alert-secondary d-none" id="useralert" role="alert">
+                User name must be at least 3 characters
+              </div>
+              <div class="alert alert-secondary d-none" id="emailAlert" role="alert">
+                Please enter a valid email address
+              </div>
+              <div class="alert alert-secondary d-none" id="passAlert" role="alert">
+                Choose a password that is at least 6 characters long
+              </div>
+              <div class="alert alert-secondary d-none" id="existsAlert" role="alert">
+                User already exists
+              </div>
+              <div class="alert alert-success d-none" id="successAlert" role="alert">
+                Sign-up successful!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <!-- Login Section -->
+        <div class="right rounded-end w-50 p-5" id="signInForm">
+          <h3 class="mb-3">Login</h3>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" />
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" />
+            </div>
+            <div class="alerts">
+              <div class="alert alert-success d-none" id="loginSuccessAlert" role="alert">
+                Login successful!
+              </div>
+              <div class="alert alert-danger d-none" id="loginFailureAlert" role="alert">
+                Invalid email or password
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <!-- Layer Section -->
+        <div class="layer w-50 d-flex flex-column justify-content-center align-items-center rounded normal">
+          <p>We're glad to have you here.</p>
+          <div class="d-flex">
+            <button id="loginBtn" class="btn bg-info me-2">Login</button>
+            <button id="signUpBtn" class="btn bg-info ms-2">Sign Up</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="JavaScript/bootstrap.bundle.min.js"></script>
+  <!-- Main JavaScript -->
+  <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

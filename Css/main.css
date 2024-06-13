@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: .5s;
+    background-color: pink;
+  }
+  
+  .layer.translated {
+    transform: translateX(100%);
+  }
+  
+  .layer.normal {
+    transform: translateX(0%);
+  }
+  
+  .left,
+  .right {
+    background-color: white;
+    color: black;
+  }
+  
